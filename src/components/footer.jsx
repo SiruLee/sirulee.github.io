@@ -13,6 +13,15 @@ function Footer({ dark, setDark }) {
   ) {
     mobile = true;
   }
+  const variants = {
+    enter: () => {
+      return mobile ? {} : { x: onHover ? -20 : -5 };
+    },
+    center: mobile ? {} : { x: 0 },
+    exit: () => {
+      return mobile ? {} : { x: 20 };
+    },
+  };
   return (
     <div id="footer">
       <div className="fborder"></div>
@@ -29,15 +38,17 @@ function Footer({ dark, setDark }) {
             setDark((curr) => !curr);
           }
         }}
-        id="color-mode"
+        id={mobile ? "mobile-color-mode" : "color-mode"}
+        className="color-mode"
       >
         <AnimatePresence onExitComplete={() => setActive(true)}>
           {dark && (
             <motion.div
               key="light-filling"
-              initial={{ x: onHover ? -20 : -5 }}
-              animate={{ x: 0 }}
-              exit={{ x: 20 }}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
               transition={{ x: { duration: 0.2 } }}
               id={onHover ? "light-hover-filling" : "light-rest-filling"}
               className="light-themeCover"
@@ -46,9 +57,10 @@ function Footer({ dark, setDark }) {
           {!dark && (
             <motion.div
               key="dark-filling"
-              initial={{ x: onHover ? -20 : -5 }}
-              animate={{ x: 0 }}
-              exit={{ x: 20 }}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
               transition={{ x: { duration: 0.2 } }}
               id={onHover ? "dark-hover-filling" : "dark-rest-filling"}
               className="dark-themeCover"
