@@ -5,6 +5,14 @@ import { useState } from "react";
 function Footer({ dark, setDark }) {
   const [onHover, setonHover] = useState(false);
   const [active, setActive] = useState(true);
+  var mobile = false;
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    mobile = true;
+  }
   return (
     <div id="footer">
       <div className="fborder"></div>
@@ -17,8 +25,8 @@ function Footer({ dark, setDark }) {
         }}
         onClick={() => {
           if (active) {
-            setDark((curr) => !curr);
             setActive(false);
+            setDark((curr) => !curr);
           }
         }}
         id="color-mode"
@@ -49,6 +57,9 @@ function Footer({ dark, setDark }) {
         </AnimatePresence>
       </motion.div>
       <div className="fborder"></div>
+      {mobile ? (
+        <div id="mobileMessage">Please use desktop for the best experience</div>
+      ) : null}
     </div>
   );
 }

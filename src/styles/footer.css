@@ -27,7 +27,7 @@
   transition: 0.2s ease;
 }
 #color-mode {
-  transition-delay: 0.2s;
+  transition-delay: 0.15s;
 }
 #dark #color-mode {
   background-color: black;
@@ -85,4 +85,8 @@
   position: absolute;
   left: -20px;
   background-color: white;
+}
+
+#mobileMessage {
+  margin: auto;
 }
