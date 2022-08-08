@@ -1,5 +1,5 @@
 function Education() {
-  return <div>Education</div>;
+  return <div className="contents">Education</div>;
 }
 
 export default Education;

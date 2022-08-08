@@ -1,0 +1,88 @@
+#footer {
+  flex: 0 1 84px;
+  padding-right: 10vw;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-top: 3px black solid;
+}
+.fborder {
+  width: 3px;
+  height: 100%;
+  background-color: black;
+}
+#color-mode {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 3px black solid;
+  background-color: transparent;
+  margin: 15px 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+#light .dark-themeCover,
+#dark .light-themeCover {
+  transition: 0.2s ease;
+}
+#color-mode {
+  transition-delay: 0.2s;
+}
+#dark #color-mode {
+  background-color: black;
+}
+
+#light #color-mode {
+  background-color: white;
+}
+#light #dark-rest-filling {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  position: absolute;
+  left: -31px;
+  background-color: black;
+}
+#light #dark-hover-filling {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  background-color: black;
+}
+#dark .dark-themeCover {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  background-color: black;
+}
+
+#dark #light-rest-filling {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  position: absolute;
+  left: -31px;
+  background-color: white;
+}
+#dark #light-hover-filling {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  background-color: white;
+}
+
+#light .light-themeCover {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  background-color: white;
+}

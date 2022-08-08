@@ -1,0 +1,27 @@
+#nav {
+  flex: 0 1 84px;
+  padding-left: 10vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px black solid;
+}
+#border {
+  width: 3px;
+  height: 100%;
+  background-color: black;
+}
+#navlist {
+  font-weight: 700;
+  margin-left: 5px;
+}
+#navlist div {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.active {
+  color: #ff1e00;
+}
+.inactive {
+  color: black;
+}

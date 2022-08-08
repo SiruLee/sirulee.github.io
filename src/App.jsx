@@ -9,12 +9,13 @@ import Contact from "./components/contact.jsx";
 
 function App() {
   const [index, setIndex] = useState(0);
+  const [dark, setDark] = useState(false);
   const contents = [<Profile />, <Projects />, <Education />, <Contact />];
   return (
-    <div className="App">
-      <Navigation setIndex={setIndex} />
+    <div className="App" id={dark ? "dark" : "light"}>
+      <Navigation index={index} setIndex={setIndex} />
       {contents[index]}
-      <Footer />
+      <Footer dark={dark} setDark={setDark} />
     </div>
   );
 }
