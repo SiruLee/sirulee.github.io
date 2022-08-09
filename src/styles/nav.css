@@ -1,4 +1,9 @@
+#nav,
+#nav * {
+  transition: 0.2s ease;
+}
 #nav {
+  font-family: "Oxygen", sans-serif;
   flex: 0 1 84px;
   padding-left: 10vw;
   position: relative;
@@ -24,4 +29,19 @@
 }
 .inactive {
   color: black;
+}
+
+#dark #nav {
+  background-color: #292929;
+  border-bottom: 3px white solid;
+}
+
+#dark #border {
+  background-color: white;
+}
+#dark .inactive {
+  color: white;
+}
+#dark .active {
+  color: #ff4229;
 }

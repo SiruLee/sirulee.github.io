@@ -6,10 +6,12 @@ import Profile from "./components/profile.jsx";
 import Education from "./components/edu.jsx";
 import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
+import { useEffect } from "react";
 
 function App() {
   const [index, setIndex] = useState(0);
   const [dark, setDark] = useState(false);
+
   const contents = [<Profile />, <Projects />, <Education />, <Contact />];
   return (
     <div className="App" id={dark ? "dark" : "light"}>

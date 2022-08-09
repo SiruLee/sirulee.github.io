@@ -1,0 +1,60 @@
+#profile {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  transition-duration: 0.2s;
+  transition-property: background;
+  overflow: hidden;
+  background: linear-gradient(75deg, #e1122d -10%, #fcd581 20%, white 40%);
+}
+#profile * {
+  transition-duration: 0.1s;
+  transition-property: color;
+}
+#dark #profile {
+  background: linear-gradient(75deg, #58a4b0 -10%, #373f51 20%, #292929 40%);
+}
+#name {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 30%;
+  max-height: calc((100vh - 168px) * 0.3);
+  font-weight: 500;
+}
+#name div {
+  padding-left: 3vw;
+}
+#tech {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 70%;
+  max-height: calc((100vh - 168px) * 0.7);
+  align-items: center;
+  padding-right: 3vw;
+}
+#techWrapper {
+  flex: 0 0 auto;
+}
+#tech div {
+  font-weight: 500;
+  text-align: right;
+  font-weight: 300;
+}
+#dark #tech,
+#dark #name {
+  color: white;
+}
+
+#dots {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 5vh;
+  height: 100%;
+  border-right: 3px black solid;
+  overflow: hidden;
+}
+.dotRow {
+  display: flex;
+  flex-direction: row;
+}

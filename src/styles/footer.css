@@ -5,25 +5,45 @@
   flex-direction: row-reverse;
   align-items: center;
   border-top: 3px black solid;
+  transition: 0.2s ease;
+}
+#dark #footer {
+  border-top: 3px white solid;
+  background-color: #292929;
 }
 .fborder {
   flex: 0 0 auto;
   width: 3px;
   height: 100%;
   background-color: black;
+  transition: 0.2s ease;
 }
+#dark .fborder {
+  background-color: white;
+}
+
 #color-mode {
   flex: 0 0 36px;
   height: 36px;
   width: 36px;
   border-radius: 50%;
-  border: 3px black solid;
+  border: 3px #292929 solid;
   background-color: transparent;
   margin: 15px 15px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition-delay: 0.15s;
+  transition-duration: 0, 0.2s;
+  transition-delay: 0.15s, 0s;
+  transition-property: background-color, border;
+}
+#dark .color-mode {
+  border: 3px white solid;
+  background-color: #292929;
+}
+
+#light .color-mode {
+  background-color: white;
 }
 #mobile-color-mode {
   flex: 0 0 36px;
@@ -42,20 +62,13 @@
 #dark .light-themeCover {
   transition: 0.2s ease;
 }
-#dark .color-mode {
-  background-color: black;
-}
-
-#light .color-mode {
-  background-color: white;
-}
 #light #dark-rest-filling {
   height: 36px;
   width: 36px;
   border-radius: 50%;
   position: absolute;
   left: -31px;
-  background-color: black;
+  background-color: #292929;
 }
 #light #dark-hover-filling {
   height: 36px;
@@ -63,7 +76,7 @@
   border-radius: 50%;
   position: absolute;
   left: -20px;
-  background-color: black;
+  background-color: #292929;
 }
 #dark .dark-themeCover {
   height: 36px;
@@ -71,7 +84,7 @@
   border-radius: 50%;
   position: absolute;
   left: -20px;
-  background-color: black;
+  background-color: #292929;
 }
 
 #dark #light-rest-filling {
