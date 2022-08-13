@@ -1,10 +1,6 @@
 import useMeasure from "react-use-measure";
-import { createDomMotionComponent, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import "../styles/profile.css";
-import Dot from "./dot.jsx";
-import { useState } from "react";
-import { useRef } from "react";
-import { useEffect } from "react";
 function min(x, y) {
   return x < y ? x : y;
 }
@@ -13,7 +9,6 @@ function max(x, y) {
 }
 
 function Profile() {
-  const [cursor, setCursor] = useState({ x: 0, y: 0 });
   const [ref, nameInfo] = useMeasure();
 
   const techs = [
@@ -23,13 +18,7 @@ function Profile() {
     "Quantum Informatics",
   ];
   return (
-    <div
-      className="contents"
-      id="profile"
-      onMouseMove={({ clientX, clientY }) =>
-        setCursor({ x: clientX, y: clientY })
-      }
-    >
+    <div className="contents" id="profile">
       <div id="name" ref={ref}>
         <div
           style={{

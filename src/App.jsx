@@ -6,15 +6,20 @@ import Profile from "./components/profile.jsx";
 import Education from "./components/edu.jsx";
 import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
-import { useEffect } from "react";
+import { useRef } from "react";
 
 function App() {
   const [index, setIndex] = useState(0);
   const [dark, setDark] = useState(false);
-
-  const contents = [<Profile />, <Projects />, <Education />, <Contact />];
+  const initialHeight = useRef();
+  const contents = [
+    <Profile />,
+    <Projects />,
+    <Education initialHeight={initialHeight?.current?.clientHeight - 174} />,
+    <Contact />,
+  ];
   return (
-    <div className="App" id={dark ? "dark" : "light"}>
+    <div className="App" id={dark ? "dark" : "light"} ref={initialHeight}>
       <Navigation index={index} setIndex={setIndex} />
       {contents[index]}
       <Footer dark={dark} setDark={setDark} />

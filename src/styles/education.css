@@ -1,0 +1,86 @@
+#education {
+  position: relative;
+}
+.eduPlace {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px black solid;
+  border-top: 3px black solid;
+  transition-duration: 0.3s, 0.3s, 0.2s, 0.2s, 0.2s, 0.2s;
+  transition-delay: 0.2s, 0.2s, 0s, 0s, 0s, 0s;
+  transition-property: top, height, border-bottom, border-top, background-color,
+    color;
+  transition-timing-function: cubic-bezier(0.3, 0, 0.3, 1),
+    cubic-bezier(0.3, 0, 0.3, 1), ease, ease, ease, ease;
+  color: rgba(0, 0, 0, 0.5);
+}
+#dark .eduPlace {
+  border-bottom: 3px white solid;
+  border-top: 3px white solid;
+  background-color: #292929;
+  color: rgba(255, 255, 255, 0.5);
+}
+.city {
+  font-family: "Oxygen", sans-serif;
+  width: 90%;
+  font-weight: 700;
+  line-height: 1;
+  text-align-last: justify;
+  transition: 0.2s ease;
+  transition-property: color;
+}
+
+.eduPlace:hover {
+  color: rgba(0, 0, 0, 1);
+}
+#dark .eduPlace:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+#dark #detail {
+  color: white;
+}
+#detail div {
+  flex: 0 0 auto;
+  width: 80%;
+}
+
+#institution {
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+#degree,
+#program {
+  font-weight: 400;
+}
+#program {
+  background: linear-gradient(0deg, #ff1e00, rgb(254, 250, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#gpa {
+  font-weight: 400;
+  margin-top: 2%;
+}
+#maxgpa {
+  display: inline;
+  color: rgba(0, 0, 0, 0.4);
+}
+#dark #maxgpa {
+  color: rgba(255, 255, 255, 0.4);
+}

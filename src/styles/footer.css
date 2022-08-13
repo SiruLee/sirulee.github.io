@@ -6,6 +6,8 @@
   align-items: center;
   border-top: 3px black solid;
   transition: 0.2s ease;
+  z-index: 3;
+  background-color: white;
 }
 #dark #footer {
   border-top: 3px white solid;
@@ -116,4 +118,9 @@
 #mobileMessage {
   margin: auto;
   text-align: center;
+  font-family: "Oxygen", sans-serif;
+}
+
+#dark #mobileMessage {
+  color: white;
 }

@@ -10,6 +10,8 @@
   display: flex;
   align-items: center;
   border-bottom: 3px black solid;
+  background-color: white;
+  z-index: 3;
 }
 #border {
   width: 3px;
@@ -43,5 +45,5 @@
   color: white;
 }
 #dark .active {
-  color: #ff4229;
+  color: #31bfee;
 }
