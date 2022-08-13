@@ -29,7 +29,10 @@
   width: 90%;
   font-weight: 700;
   line-height: 1;
+  text-align: center;
   text-align-last: justify;
+  -moz-text-align-last: justify;
+  -ms-text-align-last: justify;
   transition: 0.2s ease;
   transition-property: color;
 }
@@ -65,12 +68,22 @@
 }
 #degree,
 #program {
-  font-weight: 400;
+  font-weight: 500;
 }
 #program {
-  background: linear-gradient(0deg, #ff1e00, rgb(254, 250, 0));
+  background: linear-gradient(0deg, #da0641, #f2a30f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#dark #program {
+  background: linear-gradient(0deg, #6078ea, #17ea79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#period {
+  margin-top: 1%;
+  font-weight: 500;
+  opacity: 0.6;
 }
 
 #gpa {

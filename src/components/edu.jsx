@@ -21,6 +21,7 @@ const EduItem = ({
       name: "University of Toronto",
       degree: "Honours Bachelor of Science (HBSc)",
       program: "Computer Science Specialist & Physics Major",
+      period: "2021 ~ CURRENT",
       gpa: ["4.0", "4.0"],
     },
     {},
@@ -79,7 +80,7 @@ const EduItem = ({
           >
             <div
               id="institution"
-              style={{ fontSize: min(height, width) * 0.8 * 0.8 }}
+              style={{ fontSize: min(height, width * 1.3) * 0.8 * 0.7 }}
             >
               {detail[i].name}
             </div>
@@ -95,7 +96,13 @@ const EduItem = ({
             >
               {detail[i].program}
             </div>
-            <div id="gpa" style={{ fontSize: min(height, width) * 0.8 * 0.4 }}>
+            <div
+              id="period"
+              style={{ fontSize: min(height, width) * 0.8 * 0.35 }}
+            >
+              {detail[i].period}
+            </div>
+            <div id="gpa" style={{ fontSize: min(height, width) * 0.8 * 0.35 }}>
               GPA : {detail[i].gpa[0]}
               <p
                 id="maxgpa"
