@@ -70,7 +70,9 @@ function Footer({ dark, setDark }) {
       </motion.div>
       <div className="fborder"></div>
       {mobile ? (
-        <div id="mobileMessage">Please use desktop for the best experience</div>
+        <div id="mobileMessage">
+          Please use a desktop for the best experience
+        </div>
       ) : null}
     </div>
   );

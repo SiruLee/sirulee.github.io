@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jiheon Lee</title>
   </head>
-  <body id="body">
+  <body id="body" scro>
     <div id="root"></div>
     <script type="module" src="./src/main.jsx"></script>
   </body>
   <style>
     #body {
       margin: 0;
+      overflow: hidden;
     }
     #root {
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
     }
   </style>
 </html>

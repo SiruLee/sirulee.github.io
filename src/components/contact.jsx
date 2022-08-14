@@ -68,6 +68,7 @@ function Contact({ dark }) {
         style={{
           transition: release ? "1s ease" : "",
           backdropFilter: `blur(${blur}px)`,
+          WebkitBackdropFilter: `blur(${blur}px)`,
           backgroundImage: dark
             ? `radial-gradient(rgba(0, 0, 0, 0) 2px, #292929 ${dotSize}px)`
             : `radial-gradient(rgba(0, 0, 0, 0) 2px, white ${dotSize}px)`,
