@@ -41,7 +41,7 @@ function Contact({ dark }) {
           setDragAmount(
             Math.sqrt(Math.pow(info.offset.x, 2) + Math.pow(info.offset.y, 2))
           );
-          setBlur(10 - min(10, Math.sqrt(dragAmount) / 1.5));
+          setBlur(10 - min(10, Math.pow(dragAmount, 1 / 1.8) / 1.5));
           setDotSize(min(15, Math.pow(dragAmount, 0.8) / 8 + 2));
         }}
         onDragEnd={() => {
@@ -73,7 +73,7 @@ function Contact({ dark }) {
               className="blinder"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.2, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               style={{
                 transition: release ? "1s ease" : "",
                 backdropFilter: `blur(${blur}px)`,
@@ -90,7 +90,7 @@ function Contact({ dark }) {
               className="blinder"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.2, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               style={{
                 transition: release ? "1s ease" : "",
                 backdropFilter: `blur(${blur}px)`,
