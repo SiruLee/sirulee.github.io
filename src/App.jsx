@@ -14,7 +14,7 @@ if (
 ) {
   initialDark = true;
 } else {
-  inititalDark = false;
+  initialDark = false;
 }
 function App() {
   const [index, setIndex] = useState(0);
