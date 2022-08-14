@@ -80,33 +80,36 @@ const EduItem = ({
           >
             <div
               id="institution"
-              style={{ fontSize: min(height, width * 1.3) * 0.8 * 0.7 }}
+              style={{ fontSize: min(height * 0.8, width * 1.3) * 0.8 * 0.7 }}
             >
               {detail[i].name}
             </div>
             <div
               id="degree"
-              style={{ fontSize: min(height, width) * 0.8 * 0.4 }}
+              style={{ fontSize: min(height * 0.7, width) * 0.8 * 0.4 }}
             >
               {detail[i].degree}
             </div>
             <div
               id="program"
-              style={{ fontSize: min(height, width) * 0.8 * 0.4 }}
+              style={{ fontSize: min(height * 0.7, width) * 0.8 * 0.4 }}
             >
               {detail[i].program}
             </div>
             <div
               id="period"
-              style={{ fontSize: min(height, width) * 0.8 * 0.35 }}
+              style={{ fontSize: min(height * 0.7, width) * 0.8 * 0.35 }}
             >
               {detail[i].period}
             </div>
-            <div id="gpa" style={{ fontSize: min(height, width) * 0.8 * 0.35 }}>
+            <div
+              id="gpa"
+              style={{ fontSize: min(height * 0.7, width) * 0.8 * 0.35 }}
+            >
               GPA : {detail[i].gpa[0]}
               <p
                 id="maxgpa"
-                style={{ fontSize: min(height, width) * 0.8 * 0.3 }}
+                style={{ fontSize: min(height * 0.7, width) * 0.7 * 0.3 }}
               >
                 /{detail[i].gpa[1]}
               </p>

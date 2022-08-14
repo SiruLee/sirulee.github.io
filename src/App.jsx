@@ -16,7 +16,7 @@ function App() {
     <Profile />,
     <Projects />,
     <Education initialHeight={initialHeight?.current?.clientHeight - 174} />,
-    <Contact />,
+    <Contact dark={dark} />,
   ];
   return (
     <div className="App" id={dark ? "dark" : "light"} ref={initialHeight}>

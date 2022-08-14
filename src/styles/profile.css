@@ -1,17 +1,35 @@
+#light-profile,
+#dark-profile {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+#light-profile {
+  transition: opacity 0.2s ease !important;
+  background: linear-gradient(75deg, #e1122d -10%, #fcd581 20%, white 40%);
+  opacity: 1;
+}
+#dark #light-profile {
+  opacity: 0;
+}
+#dark-profile {
+  opacity: 0;
+  transition: opacity 0.2s ease !important;
+  background: linear-gradient(75deg, #58a4b0 -10%, #373f51 20%, #292929 40%);
+}
+#dark #dark-profile {
+  opacity: 1;
+}
+
 #profile {
   position: relative;
   font-family: "Ubuntu", sans-serif;
-  transition-duration: 0.2s;
-  transition-property: background;
   overflow: hidden;
-  background: linear-gradient(75deg, #e1122d -10%, #fcd581 20%, white 40%);
 }
 #profile * {
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
   transition-property: color;
-}
-#dark #profile {
-  background: linear-gradient(75deg, #58a4b0 -10%, #373f51 20%, #292929 40%);
 }
 #name {
   display: flex;
@@ -23,6 +41,7 @@
 }
 #name div {
   padding-left: 4vw;
+  z-index: 1;
 }
 #tech {
   display: flex;
@@ -39,6 +58,7 @@
   font-weight: 500;
   text-align: right;
   font-weight: 300;
+  z-index: 1;
 }
 #dark #tech,
 #dark #name {
