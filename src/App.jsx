@@ -7,10 +7,23 @@ import Education from "./components/edu.jsx";
 import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
 import { useRef } from "react";
-
+var initialDark = false;
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  initialDark = true;
+} else {
+  inititalDark = false;
+}
 function App() {
   const [index, setIndex] = useState(0);
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(initialDark);
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (event) => {
+      setDark(event.matches ? true : false);
+    });
   const initialHeight = useRef();
   const contents = [
     <Profile />,
