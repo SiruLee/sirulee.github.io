@@ -69,8 +69,6 @@ function Projects({ dark }) {
   }, []);
   return (
     <div className="contents" id="projects">
-      <div className="light-gradient"></div>
-      <div className="dark-gradient"></div>
       <div id="scrollContainer" ref={scrollRef}>
         <div className="space" style={{ marginRight: "-5vw" }}></div>
         {Array.from({ length: ProjectData.length }).map((_, i) => (
@@ -83,6 +81,8 @@ function Projects({ dark }) {
         ))}
         <div className="space" style={{ marginLeft: "-5vw" }}></div>
       </div>
+      <div className="light-gradient"></div>
+      <div className="dark-gradient"></div>
     </div>
   );
 }

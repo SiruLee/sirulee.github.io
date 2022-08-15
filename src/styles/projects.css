@@ -3,9 +3,11 @@
   height: 100%;
   overflow: scroll;
   display: flex;
+  position: absolute;
   flex-direction: row;
   align-items: center;
   scrollbar-width: none;
+  z-index: 1;
 }
 #scrollContainer::-webkit-scrollbar {
   display: none;
