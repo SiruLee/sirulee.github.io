@@ -31,6 +31,7 @@ function App() {
     <div className="App" id={dark ? "dark" : "light"} ref={initialHeight}>
       <Navigation index={index} setIndex={setIndex} />
       <Routes>
+        <Route path="/" element={<Profile />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/projects" element={<Projects dark={dark} />} />
         <Route
