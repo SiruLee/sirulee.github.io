@@ -106,25 +106,36 @@ function Contact({ dark }) {
           className="contactContent"
           style={{
             fontSize: min(
-              contactInfo["height"] * 0.2,
+              contactInfo["height"] * 0.15,
               contactInfo["width"] * 0.06
             ),
           }}
         >
-          https://github.com/SiruLee
+          github.com/<p className="highlight">SiruLee</p>
         </div>
-
+        <div
+          id="linkedin"
+          className="contactContent"
+          style={{
+            fontSize: min(
+              contactInfo["height"] * 0.15,
+              contactInfo["width"] * 0.06
+            ),
+          }}
+        >
+          linkedin.com/in/<p className="highlight">SiruLee</p>
+        </div>
         <div
           id="email"
           className="contactContent"
           style={{
             fontSize: min(
-              contactInfo["height"] * 0.2,
+              contactInfo["height"] * 0.15,
               contactInfo["width"] * 0.06
             ),
           }}
         >
-          jhlee520801@gmail.com
+          <p className="highlight">jhlee520801</p>@gmail.com
         </div>
       </div>
     </div>

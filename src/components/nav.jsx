@@ -1,4 +1,5 @@
 import "../styles/nav.css";
+
 function Navigation({ index, setIndex }) {
   return (
     <div id="nav">

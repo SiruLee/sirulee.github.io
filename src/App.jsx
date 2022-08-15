@@ -7,6 +7,7 @@ import Education from "./components/edu.jsx";
 import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
 import { useRef } from "react";
+
 var initialDark = false;
 if (
   window.matchMedia &&
@@ -27,7 +28,7 @@ function App() {
   const initialHeight = useRef();
   const contents = [
     <Profile />,
-    <Projects />,
+    <Projects dark={dark} />,
     <Education initialHeight={initialHeight?.current?.clientHeight - 174} />,
     <Contact dark={dark} />,
   ];

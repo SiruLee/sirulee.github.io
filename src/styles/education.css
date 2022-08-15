@@ -24,6 +24,11 @@
   background-color: #292929;
   color: rgba(255, 255, 255, 0.5);
 }
+#suppressed {
+  transition-duration: 0s, 0s;
+  transition-delay: 0s, 0s;
+  transition-property: top, height;
+}
 .city {
   font-family: "Oxygen", sans-serif;
   width: 90%;

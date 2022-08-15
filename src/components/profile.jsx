@@ -19,8 +19,8 @@ function Profile() {
   ];
   return (
     <div className="contents" id="profile">
-      <div id="light-profile"></div>
-      <div id="dark-profile"></div>
+      <div className="light-gradient"></div>
+      <div className="dark-gradient"></div>
       <div id="name" ref={ref}>
         <div
           style={{

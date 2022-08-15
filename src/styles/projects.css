@@ -1,0 +1,80 @@
+#scrollContainer {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  scrollbar-width: none;
+}
+#scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.projectFrame {
+  flex: 1 0 auto;
+  width: 24vh;
+  height: 32vh;
+  margin: 0 max(2vw, 30px);
+  position: relative;
+  overflow: hidden;
+}
+.space {
+  flex: 1 0 calc(50% - 12vh);
+  height: 100%;
+}
+.projectContent {
+  font-family: "Cormorant", serif;
+  transition: 0.2s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.projectName {
+  font-weight: 700;
+  font-size: 3.5vh;
+  margin: 2vh 0 5px 2vh;
+}
+.projectType,
+.projectDate {
+  font-size: 2.2vh;
+  margin-left: 2vh;
+}
+
+.hline {
+  width: 82.5%;
+  height: 0.7px;
+  background-color: white;
+  margin: 5px 2vh;
+}
+.projectDescription {
+  padding: 5px 5px 5px 3px;
+  border-radius: 5px;
+  text-align: end;
+  font-weight: 600;
+  margin: 5px 2vh;
+  font-size: 2.5vh;
+}
+.projectLang {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  scrollbar-width: none;
+  font-size: 2vh;
+  margin-top: auto;
+  margin-bottom: 2vh;
+  padding: 0 20px;
+  align-items: center;
+}
+.projectLang div {
+  margin: 0 5px;
+  width: 10vw;
+  background-color: rgba(7, 15, 24, 0.5);
+  padding: 5px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.projectLang::-webkit-scrollbar {
+  display: none;
+}

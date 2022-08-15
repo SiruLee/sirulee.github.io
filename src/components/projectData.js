@@ -1,0 +1,38 @@
+export const ProjectData = [
+  {
+    id: 1,
+    color: "#222831",
+    name: "Jiheon Lee",
+    type: "Personal",
+    description: "Portfolio Page",
+    date: "Summer 2022",
+    language: ["HTML", "CSS", "ReactJS", "Framer Motion"],
+  },
+  {
+    id: 2,
+    color: "#3F4E4F",
+    name: "Study Helper",
+    type: "Assignment",
+    description: "Clock, ToDo, and Flashcard",
+    date: "Fall 2020 (Grade 11)",
+    language: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: 3,
+    color: "#774360",
+    name: "SparkNote",
+    type: "Personal",
+    description: "Notepad, Todo, Clock, and Weather",
+    date: "Summer 2022",
+    language: ["HTML", "CSS", "ReactJS", "Electron", "React Spring"],
+  },
+  {
+    id: 4,
+    color: "#CFD2CF",
+    name: "TBA",
+    type: "???",
+    description: "",
+    date: "",
+    language: [],
+  },
+];

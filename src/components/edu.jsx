@@ -15,6 +15,7 @@ const EduItem = ({
   folded,
   setFolded,
   n,
+  resized,
 }) => {
   var detail = [
     {
@@ -37,6 +38,7 @@ const EduItem = ({
   return (
     <div
       className="eduPlace"
+      id={resized ? "suppressed" : ""}
       style={{
         borderTop: i === 0 ? "0" : "",
         borderBottom: i === n - 1 ? "0" : "",
@@ -124,6 +126,17 @@ function min(x, y) {
   return x < y ? x : y;
 }
 function Education({ initialHeight }) {
+  const [resized, setResized] = useState(false);
+  function resizedw() {
+    setResized(false);
+  }
+
+  var doit;
+  window.onresize = function () {
+    setResized(true);
+    clearTimeout(doit);
+    doit = setTimeout(resizedw, 100);
+  };
   const [folded, setFolded] = useState(-1);
   const [expanded, setExpanded] = useState(-1);
   const listId = [0, 1, 2];
@@ -131,6 +144,8 @@ function Education({ initialHeight }) {
   const [ref, eduInfo] = useMeasure();
   return (
     <div className="contents" id="education" ref={ref}>
+      <div className="light-gradient"></div>
+      <div className="dark-gradient"></div>
       {listId.map((i) => (
         <EduItem
           key={i}
@@ -143,6 +158,7 @@ function Education({ initialHeight }) {
           folded={folded}
           setFolded={setFolded}
           n={listId.length}
+          resized={resized}
         />
       ))}
     </div>

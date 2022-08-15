@@ -1,24 +1,24 @@
-#light-profile,
-#dark-profile {
+.light-gradient,
+.dark-gradient {
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 0;
 }
-#light-profile {
+.light-gradient {
   transition: opacity 0.2s ease !important;
   background: linear-gradient(75deg, #e1122d -10%, #fcd581 20%, white 40%);
   opacity: 1;
 }
-#dark #light-profile {
+#dark .light-gradient {
   opacity: 0;
 }
-#dark-profile {
+.dark-gradient {
   opacity: 0;
   transition: opacity 0.2s ease !important;
   background: linear-gradient(75deg, #58a4b0 -10%, #373f51 20%, #292929 40%);
 }
-#dark #dark-profile {
+#dark .dark-gradient {
   opacity: 1;
 }
 
