@@ -10,7 +10,7 @@ function Navigation({ index, setIndex }) {
           className={index == 0 ? "active" : "inactive"}
           onClick={() => {
             setIndex(0);
-            localStorage.setItem("index", "0");
+            sessionStorage.setItem("index", "0");
           }}
         >
           <div>PROFILE</div>
@@ -20,7 +20,7 @@ function Navigation({ index, setIndex }) {
           className={index == 1 ? "active" : "inactive"}
           onClick={() => {
             setIndex(1);
-            localStorage.setItem("index", "1");
+            sessionStorage.setItem("index", "1");
           }}
         >
           <div>PROJECTS</div>
@@ -30,7 +30,7 @@ function Navigation({ index, setIndex }) {
           className={index == 2 ? "active" : "inactive"}
           onClick={() => {
             setIndex(2);
-            localStorage.setItem("index", "2");
+            sessionStorage.setItem("index", "2");
           }}
         >
           <div>EDUCATION</div>
@@ -40,7 +40,7 @@ function Navigation({ index, setIndex }) {
           className={index == 3 ? "active" : "inactive"}
           onClick={() => {
             setIndex(3);
-            localStorage.setItem("index", "3");
+            sessionStorage.setItem("index", "3");
           }}
         >
           <div>CONTACT</div>

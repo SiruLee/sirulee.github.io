@@ -17,7 +17,7 @@ if (
 } else {
   initialDark = false;
 }
-var initialIndex = parseInt(localStorage.getItem("index")) || 0;
+var initialIndex = parseInt(sessionStorage.getItem("index")) || 0;
 function App() {
   const [index, setIndex] = useState(initialIndex);
   const [dark, setDark] = useState(initialDark);
