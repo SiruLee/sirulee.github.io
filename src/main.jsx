@@ -13,7 +13,10 @@ window.addEventListener("resize", () => {
   let vw = window.innerWidth * 0.01;
   document.documentElement.style.setProperty("--vw", `${vw}px`);
 });
-
+window.onbeforeunload = function () {
+  localStorage.removeItem("index");
+  return "";
+};
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <App />

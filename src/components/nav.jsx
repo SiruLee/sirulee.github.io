@@ -9,6 +9,7 @@ function Navigation({ index, setIndex }) {
           to="/profile"
           className={index == 0 ? "active" : "inactive"}
           onClick={() => {
+            setIndex(0);
             localStorage.setItem("index", "0");
           }}
         >
@@ -18,6 +19,7 @@ function Navigation({ index, setIndex }) {
           to="/projects"
           className={index == 1 ? "active" : "inactive"}
           onClick={() => {
+            setIndex(1);
             localStorage.setItem("index", "1");
           }}
         >
@@ -27,6 +29,7 @@ function Navigation({ index, setIndex }) {
           to="/education"
           className={index == 2 ? "active" : "inactive"}
           onClick={() => {
+            setIndex(2);
             localStorage.setItem("index", "2");
           }}
         >
@@ -36,6 +39,7 @@ function Navigation({ index, setIndex }) {
           to="/contact"
           className={index == 3 ? "active" : "inactive"}
           onClick={() => {
+            setIndex(3);
             localStorage.setItem("index", "3");
           }}
         >

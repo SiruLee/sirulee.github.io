@@ -27,14 +27,7 @@ function App() {
       setDark(event.matches ? true : false);
     });
   const initialHeight = useRef();
-  const location = useLocation();
-  useEffect(() => {
-    if (location.pathname === "/" || location.pathname == "/profile")
-      setIndex(0);
-    else if (location.pathname === "/projects") setIndex(1);
-    else if (location.pathname === "/education") setIndex(2);
-    else if (location.pathname === "/contact") setIndex(3);
-  }, [location.pathname]);
+
   return (
     <div className="App" id={dark ? "dark" : "light"} ref={initialHeight}>
       <Navigation index={index} setIndex={setIndex} />
