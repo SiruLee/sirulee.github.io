@@ -6,8 +6,7 @@ import Profile from "./components/profile.jsx";
 import Education from "./components/edu.jsx";
 import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 var initialDark = false;
 if (
   window.matchMedia &&
