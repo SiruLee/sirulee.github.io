@@ -81,8 +81,6 @@ function Projects({ dark }) {
         ))}
         <div className="space" style={{ marginLeft: "-5vw" }}></div>
       </div>
-      <div className="light-gradient"></div>
-      <div className="dark-gradient"></div>
     </div>
   );
 }

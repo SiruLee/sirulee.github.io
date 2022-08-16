@@ -7,6 +7,7 @@ export const ProjectData = [
     description: "Portfolio Page",
     date: "Summer 2022",
     language: ["HTML", "CSS", "ReactJS", "Framer Motion"],
+    a: "https://github.com/SiruLee/sirulee.github.io",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const ProjectData = [
     description: "Clock, ToDo, and Flashcard",
     date: "Fall 2020 (Grade 11)",
     language: ["HTML", "CSS", "JavaScript"],
+    a: "https://github.com/SiruLee/Study-Helper",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const ProjectData = [
     description: "Notepad, Todo, Clock, and Weather",
     date: "Summer 2022",
     language: ["HTML", "CSS", "ReactJS", "Electron", "React Spring"],
+    a: "https://github.com/SiruLee/SparkNote",
   },
   {
     id: 4,
@@ -34,5 +37,6 @@ export const ProjectData = [
     description: "",
     date: "",
     language: [],
+    a: "",
   },
 ];

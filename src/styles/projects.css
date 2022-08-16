@@ -25,6 +25,10 @@
   flex: 1 0 calc(50% - 12vh);
   height: 100%;
 }
+.projectLink {
+  height: 100%;
+  text-decoration: none;
+}
 .projectContent {
   font-family: "Cormorant", serif;
   transition: 0.2s ease;
@@ -51,11 +55,12 @@
   margin: 5px 2vh;
 }
 .projectDescription {
-  padding: 5px 5px 5px 3px;
+  padding: 0 5px 0 3px;
   border-radius: 5px;
   text-align: end;
   font-weight: 600;
-  margin: 5px 2vh;
+  margin: 1vh 2vh;
+  margin-bottom: 0;
   font-size: 2.5vh;
 }
 .projectLang {
@@ -66,15 +71,14 @@
   font-size: 2vh;
   margin-top: auto;
   margin-bottom: 2vh;
-  padding: 0 20px;
+  padding: 0 1.5vh;
   align-items: center;
 }
 .projectLang div {
   margin: 0 5px;
-  width: 10vw;
   background-color: rgba(7, 15, 24, 0.5);
-  padding: 5px 10px;
-  border-radius: 20px;
+  padding: 0.5vh 2vh;
+  border-radius: 100px;
   white-space: nowrap;
 }
 .projectLang::-webkit-scrollbar {
