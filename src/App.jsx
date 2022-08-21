@@ -6,7 +6,8 @@ import Profile from "./components/profile.jsx";
 import Education from "./components/edu.jsx";
 import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 var initialDark = false;
 if (
   window.matchMedia &&
@@ -26,6 +27,18 @@ function App() {
       setDark(event.matches ? true : false);
     });
   const initialHeight = useRef();
+  let loc = useLocation();
+  useEffect(() => {
+    if (loc.pathname == "/" || loc.pathname == "/profile") {
+      setIndex(0);
+    } else if (loc.pathname == "/projects") {
+      setIndex(1);
+    } else if (loc.pathname == "/education") {
+      setIndex(2);
+    } else if (loc.pathname == "/contact") {
+      setIndex(3);
+    }
+  }, [loc.pathname]);
 
   return (
     <div className="App" id={dark ? "dark" : "light"} ref={initialHeight}>
