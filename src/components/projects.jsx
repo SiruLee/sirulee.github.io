@@ -68,7 +68,14 @@ function Projects({ dark }) {
     });
   }, []);
   return (
-    <div className="contents" id="projects">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      className="contents"
+      id="projects"
+    >
       <div id="scrollContainer" ref={scrollRef}>
         <div className="space" style={{ marginRight: "-5vw" }}></div>
         {Array.from({ length: ProjectData.length }).map((_, i) => (
@@ -81,7 +88,7 @@ function Projects({ dark }) {
         ))}
         <div className="space" style={{ marginLeft: "-5vw" }}></div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

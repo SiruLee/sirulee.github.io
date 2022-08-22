@@ -23,7 +23,14 @@ function Contact({ dark }) {
   const [dotSize, setDotSize] = useState(2);
   const [blur, setBlur] = useState(10);
   return (
-    <div className="contents" onPointerDown={startDrag}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      className="contents"
+      onPointerDown={startDrag}
+    >
       <motion.div
         drag
         dragConstraints={{
@@ -138,7 +145,7 @@ function Contact({ dark }) {
           <p className="highlight">jhlee520801</p>@gmail.com
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

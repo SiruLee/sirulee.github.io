@@ -8,6 +8,7 @@ import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 var initialDark = false;
 if (
   window.matchMedia &&
@@ -43,20 +44,29 @@ function App() {
   return (
     <div className="App" id={dark ? "dark" : "light"} ref={initialHeight}>
       <Navigation index={index} setIndex={setIndex} />
-      <Routes>
-        <Route path="/" element={<Profile />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/projects" element={<Projects dark={dark} />} />
-        <Route
-          path="/education"
-          element={
-            <Education
-              initialHeight={initialHeight?.current?.clientHeight - 174}
-            />
-          }
-        />
-        <Route path="/contact" element={<Contact dark={dark} />} />
-      </Routes>
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={loc} key={loc.pathname}>
+          <Route
+            path="/"
+            element={
+              <div>
+                <Profile />
+              </div>
+            }
+          />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/projects" element={<Projects dark={dark} />} />
+          <Route
+            path="/education"
+            element={
+              <Education
+                initialHeight={initialHeight?.current?.clientHeight - 174}
+              />
+            }
+          />
+          <Route path="/contact" element={<Contact dark={dark} />} />
+        </Routes>
+      </AnimatePresence>
       <Footer dark={dark} setDark={setDark} />
     </div>
   );

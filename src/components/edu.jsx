@@ -143,7 +143,15 @@ function Education({ initialHeight }) {
   const city = ["T O R O N T O", "? ? ?", "? ? ?"];
   const [ref, eduInfo] = useMeasure();
   return (
-    <div className="contents" id="education" ref={ref}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      className="contents"
+      id="education"
+      ref={ref}
+    >
       <div className="light-gradient"></div>
       <div className="dark-gradient"></div>
       {listId.map((i) => (
@@ -161,7 +169,7 @@ function Education({ initialHeight }) {
           resized={resized}
         />
       ))}
-    </div>
+    </motion.div>
   );
 }
 

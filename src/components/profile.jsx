@@ -18,7 +18,14 @@ function Profile() {
     "Quantum Informatics",
   ];
   return (
-    <div className="contents" id="profile">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      className="contents"
+      id="profile"
+    >
       <div className="light-gradient"></div>
       <div className="dark-gradient"></div>
       <div id="name" ref={ref}>
@@ -65,7 +72,7 @@ function Profile() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
