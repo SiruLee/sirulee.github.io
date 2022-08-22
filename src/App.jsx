@@ -46,14 +46,7 @@ function App() {
       <Navigation index={index} setIndex={setIndex} />
       <AnimatePresence exitBeforeEnter>
         <Routes location={loc} key={loc.pathname}>
-          <Route
-            path="/"
-            element={
-              <div>
-                <Profile />
-              </div>
-            }
-          />
+          <Route path="/" element={<Profile />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/projects" element={<Projects dark={dark} />} />
           <Route
