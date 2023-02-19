@@ -31,6 +31,16 @@ export const ProjectData = [
   },
   {
     id: 4,
+    color: "#96897B",
+    name: "StudyBuddy",
+    type: "Course Project",
+    description: "Campus Social Media Service",
+    date: "Fall 2022",
+    language: ["Java", "Git"],
+    a: "https://github.com/CSC207-2022F-UofT/course-project-zuck-s-children",
+  },
+  {
+    id: 5,
     color: "#CFD2CF",
     name: "TBA",
     type: "???",
