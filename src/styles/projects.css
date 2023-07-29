@@ -1,86 +1,86 @@
 #scrollContainer {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  display: flex;
-  position: absolute;
-  flex-direction: row;
-  align-items: center;
-  scrollbar-width: none;
-  z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    scrollbar-width: none;
+    z-index: 1;
 }
 #scrollContainer::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .projectFrame {
-  flex: 1 0 auto;
-  width: 24vh;
-  height: 32vh;
-  margin: 0 max(2vw, 30px);
-  position: relative;
-  overflow: hidden;
+    flex: 1 0 auto;
+    width: 24vh;
+    height: 32vh;
+    margin: 0 max(2vw, 30px);
+    position: relative;
+    overflow: hidden;
 }
 .space {
-  flex: 1 0 calc(50% - 6vh);
-  height: 100%;
+    flex: 1 0 calc(50% - 3vw);
+    height: 100%;
 }
 .projectLink {
-  height: 100%;
-  text-decoration: none;
+    height: 100%;
+    text-decoration: none;
 }
 .projectContent {
-  font-family: "Cormorant", serif;
-  transition: 0.2s ease;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+    font-family: "Cormorant", serif;
+    transition: 0.2s ease;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .projectName {
-  font-weight: 700;
-  font-size: 3.5vh;
-  margin: 2vh 0 5px 2vh;
+    font-weight: 700;
+    font-size: 3.5vh;
+    margin: 2vh 0 5px 2vh;
 }
 .projectType,
 .projectDate {
-  font-size: 2.2vh;
-  margin-left: 2vh;
+    font-size: 2.2vh;
+    margin-left: 2vh;
 }
 
 .hline {
-  width: 82.5%;
-  height: 0.7px;
-  background-color: white;
-  margin: 5px 2vh;
+    width: 82.5%;
+    height: 0.7px;
+    background-color: white;
+    margin: 5px 2vh;
 }
 .projectDescription {
-  padding: 0 5px 0 3px;
-  border-radius: 5px;
-  text-align: end;
-  font-weight: 600;
-  margin: 1vh 2vh;
-  margin-bottom: 0;
-  font-size: 2.5vh;
+    padding: 0 5px 0 3px;
+    border-radius: 5px;
+    text-align: end;
+    font-weight: 600;
+    margin: 1vh 2vh;
+    margin-bottom: 0;
+    font-size: 2.5vh;
 }
 .projectLang {
-  display: flex;
-  flex-direction: row;
-  overflow: scroll;
-  scrollbar-width: none;
-  font-size: 2vh;
-  margin-top: auto;
-  margin-bottom: 2vh;
-  padding: 0 1.5vh;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    scrollbar-width: none;
+    font-size: 2vh;
+    margin-top: auto;
+    margin-bottom: 2vh;
+    padding: 0 1.5vh;
+    align-items: center;
 }
 .projectLang div {
-  margin: 0 5px;
-  background-color: rgba(7, 15, 24, 0.5);
-  padding: 0.5vh 2vh;
-  border-radius: 100px;
-  white-space: nowrap;
+    margin: 0 5px;
+    background-color: rgba(7, 15, 24, 0.5);
+    padding: 0.5vh 2vh;
+    border-radius: 100px;
+    white-space: nowrap;
 }
 .projectLang::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
