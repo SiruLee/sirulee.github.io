@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 .space {
-    flex: 1 0 calc(50% - 3vw);
+    flex: 1 0 calc(50vw - 6vh);
     height: 100%;
 }
 .projectLink {
