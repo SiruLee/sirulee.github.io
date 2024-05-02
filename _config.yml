@@ -16,14 +16,14 @@ timezone: America/Toronto
 
 title: Jiheon Lee # the main title
 
-tagline: A blog written by Jiheon Lee # it will display as the sub-title
+tagline: University of Toronto, Computer Science, Physics, and Mathematics # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   An academic blog with posts about computer science, physics, and mathematics.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://sirulee.github.io/blog"
+url: "https://sirulee.github.io/blog.github.io"
 
 github:
   username: SiruLee # change to your github username
