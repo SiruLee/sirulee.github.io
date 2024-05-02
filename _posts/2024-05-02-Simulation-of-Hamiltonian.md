@@ -1,8 +1,9 @@
 ---
 title: Simulation of Hamiltonian dynamics
-author: Jiheon Lee
-date: 2024-05-02 00:34:00 +0800
-categories: [Computer Science, Physics]
+author: jiheon_lee
+description: simulation of hamiltonian dynamics
+date: 2024-05-02 01:05:00 -0600
+categories: [Computer Science, Quantum Informatics]
 tags: [Quantum Simulation]
 ---
 
