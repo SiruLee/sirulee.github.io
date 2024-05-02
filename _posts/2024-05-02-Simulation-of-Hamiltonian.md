@@ -99,6 +99,8 @@ where $s$ is a normalization constant defined as $s:=\sum^{m-1}_{j=0}\beta_j$.
 Now define 
 $$
 \begin{equation}
-W:=(\text{prep}^\dagger\otimes \mathbb{I})(\text{select(V)})(\text{prep}\otimes \mathbb{I})
+    W:=(\text{prep}^\dagger\otimes \mathbb{I})(\text{select(V)})(\text{prep}\otimes \mathbb{I})
+    \label{eq:W}
+\end{equation}
 $$
 [^r1]: D. W. Berry, A. M. Childs, R. Cleve, R. Kothari, and R.D. Somma, in Proc. 46th ACM Symposium on Theory of Computing, pp. 283–292 (2014).
