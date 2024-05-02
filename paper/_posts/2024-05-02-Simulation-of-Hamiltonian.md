@@ -24,5 +24,11 @@ where each $H_l$ is unitary.
 > Any Hamiltonian can be decomposed as a linear combination of unitary matrices.
 {: .prompt-tip }
 <!-- markdownlint-restore -->
+Suppose we wish to simulate the evolution under a Hamiltonian $H$ for time $t$:
+$$
+\begin{equation}
+    U:=\exp{-iHt}
+\end{equation}
+$$
 
 [^r1]D. W. Berry, A. M. Childs, R. Cleve, R. Kothari, and R.D. Somma, in Proc. 46th ACM Symposium on Theory of Computing, pp. 283–292 (2014).
