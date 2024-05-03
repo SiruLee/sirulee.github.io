@@ -71,7 +71,7 @@ $$
 Now notice that the \eqref{eq:expansion} is in the form
 $$
 \begin{equation}
-\tilda{U} = \sum^{m-1}_{j=0}\beta_j V_j
+\tilde{U} = \sum^{m-1}_{j=0}\beta_j V_j
 \label{eq:unitary-form}
 \end{equation}
 $$
@@ -86,7 +86,7 @@ $$
     \text{select}(V)\bra{j}\bra{\psi} = \bra{j}V_j\bra{\psi},
     \label{eq:select}
 \end{equation}
-$$ for any $j\in\{0, 1, \ldots, m - 1\} and any state $\bra{\psi}$.
+$$ for any $j\in\{0, 1, \ldots, m - 1\}$ and any state $\bra{\psi}$.
 'prep' is an $m$-dimensional unitary,
 $$
 \begin{equation}
