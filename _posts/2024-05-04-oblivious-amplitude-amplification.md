@@ -17,7 +17,7 @@ Let U and V be unitary matrices on \mu + n qubits and n qubits, respectively, an
 \begin{equation}
   U\bra{0^\mu}\bra{\psi} = \sin(\theta)\bra{0^\mu}V\bra{\psi} + \cos(\theta)\bra{\Phi^\perp},
 \end{equation}
-where \bra{\Phi^\perp} is an (\mu + n)-qubit state that depends on \bra{\psi} and satisfies \Gamma\bra{\Phi^\peri} = 0, where \Gamma:=\bra{0^\mu}\ket{0^\mu}\otimes\mathbb{I}. Let R:=2\Gamma - \mathbb{I} and S:=-URU^\dagger R. Then for any l\in\mathbb{Z},
+where \bra{\Phi^\perp} is an (\mu + n)-qubit state that depends on \bra{\psi} and satisfies \Gamma\bra{\Phi^\perp} = 0, where \Gamma:=\bra{0^\mu}\ket{0^\mu}\otimes\mathbb{I}. Let R:=2\Gamma - \mathbb{I} and S:=-URU^\dagger R. Then for any l\in\mathbb{Z},
 \begin{equation}
   S^lU\bra{0^\mu}\bra{\psi} = \sin((2l+1)\theta)\bra{0^\mu}V\bra{\psi} + \cos((2l+1)\theta)\bra{\Phi^\perp}.
 \end{equation}

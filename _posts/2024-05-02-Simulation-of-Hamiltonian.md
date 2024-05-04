@@ -113,7 +113,7 @@ $$ where $\bra{\Phi}$ is an ancillary state in the orthogonal subspace to $\bra{
 $$
 \begin{equation}
     PW\bra{0}\bra{\psi} = \frac{1}{s}\bra{0}\tilde{U}\bra{\psi}
-    \label{eq:W-on-bras}
+    \label{eq:PW-on-bras}
 \end{equation}
 $$ where the value of $s$ can be adjusted by choosing the size of the segments. To use oblivious amplitude amplification, we aim for $s=2$. The paper also claims that using $A:=-WRW^\dagger RW$, where $R:=\mathbb{I} - 2P$, we can exactly implement the unitary $\tilde{U}$. i.e.,
 $$
