@@ -1,10 +1,10 @@
 ---
 title: Simulating Hamiltonian dynamics with a truncated Taylor Series
 author: jiheon_lee
-description: Paper by Berry, Childs, Cleve, Kothari, and Somma
+description: Paper by Berry, Childs, Cleve, Kothari, and Somma (2014)
 date: 2024-05-02 01:05:00 -0400
-categories: [Paper Reading, Quantum Physics]
-tags: [Quantum Simulation]
+categories: [Paper Reading, Physics]
+tags: [Quantum Physics, Quantum Simulation]
 math: true
 ---
 
@@ -103,4 +103,27 @@ $$
     \label{eq:W}
 \end{equation}
 $$
+then it follows from the definition that
+$$
+\begin{equation}
+    W\bra{0}\bra{\psi} = \frac{1}{s}\bra{0}\tilde{U}\bra{\psi} + \sqrt{1-\frac{1}{s^2}}\bra{\Phi}
+    \label{eq:W-on-bras}
+\end{equation}
+$$ where $\bra{\Phi}$ is an ancillary state in the orthogonal subspace to $\bra{0}$. So by applying the projector $P:=\bra{0}\ket{0} \otimes \mathbb{I}$,
+$$
+\begin{equation}
+    PW\bra{0}\bra{\psi} = \frac{1}{s}\bra{0}\tilde{U}\bra{\psi}
+    \label{eq:W-on-bras}
+\end{equation}
+$$ where the value of $s$ can be adjusted by choosing the size of the segments. To use oblivious amplitude amplification, we aim for $s=2$. The paper also claims that using $A:=-WRW^\dagger RW$, where $R:=\mathbb{I} - 2P$, we can exactly implement the unitary $\tilde{U}$. i.e.,
+$$
+\begin{equation}
+ A\bra{0}\bra{\psi} = \bra{0}\tilde{U}\bra{\psi}
+\end{equation}
+$$
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+> Leave the proof for the reader and myself :)
+{: .prompt-info }
+<!-- markdownlint-restore -->
 [^r1]: D. W. Berry, A. M. Childs, R. Cleve, R. Kothari, and R.D. Somma, in Proc. 46th ACM Symposium on Theory of Computing, pp. 283–292 (2014).
