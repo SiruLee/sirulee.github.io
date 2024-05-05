@@ -3,9 +3,10 @@ title: Oblivious Amplitude Amplification
 author: jiheon_lee
 description: Paper by Berry, Childs, Cleve, Kothari, and Somma (2014)
 date: 2024-05-04 00:29:00 -0400
-categories: [Paper Reading, Physics]
+categories: [Topic Study, Physics]
 tags: [Quantum Physics, Quantum Simulation]
 math: true
+toc: true
 ---
 
 ## Introduction
