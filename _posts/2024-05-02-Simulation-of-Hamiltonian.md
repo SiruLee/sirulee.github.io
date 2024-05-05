@@ -83,14 +83,14 @@ The procedure follows as if the entire sum were unitary. While the sum is not ex
 The mechanism for implementing each unitary $V_j$ in \eqref{eq:unitary-form} follows by defining unitary operations 'prep' and 'select':
 $$
 \begin{equation}
-    \text{select}(V)\bra{j}\bra{\psi} = \bra{j}V_j\bra{\psi},
+    \text{select}(V)\ket{j}\ket{\psi} = \ket{j}V_j\ket{\psi},
     \label{eq:select}
 \end{equation}
-$$ for any $j\in\{0, 1, \ldots, m - 1\}$ and any state $\bra{\psi}$.
+$$ for any $j\in\{0, 1, \ldots, m - 1\}$ and any state $\ket{\psi}$.
 'prep' is an $m$-dimensional unitary,
 $$
 \begin{equation}
-    \text{prep}\bra{0} = \frac{1}{\sqrt{s}}\sum^{m-1}_{j=0}\sqrt{\beta_j}\bra{j},
+    \text{prep}\ket{0} = \frac{1}{\sqrt{s}}\sum^{m-1}_{j=0}\sqrt{\beta_j}\ket{j},
     \label{eq:prep}
 \end{equation}
 $$
@@ -106,19 +106,19 @@ $$
 then it follows from the definition that
 $$
 \begin{equation}
-    W\bra{0}\bra{\psi} = \frac{1}{s}\bra{0}\tilde{U}\bra{\psi} + \sqrt{1-\frac{1}{s^2}}\bra{\Phi}
-    \label{eq:W-on-bras}
+    W\ket{0}\ket{\psi} = \frac{1}{s}\ket{0}\tilde{U}\ket{\psi} + \sqrt{1-\frac{1}{s^2}}\ket{\Phi}
+    \label{eq:W-on-kets}
 \end{equation}
-$$ where $\bra{\Phi}$ is an ancillary state in the orthogonal subspace to $\bra{0}$. So by applying the projector $P:=\bra{0}\ket{0} \otimes \mathbb{I}$,
+$$ where $\ket{\Phi}$ is an ancillary state in the orthogonal subspace to $\ket{0}$. So by applying the projector $P:=\ket{0}\bra{0} \otimes \mathbb{I}$,
 $$
 \begin{equation}
-    PW\bra{0}\bra{\psi} = \frac{1}{s}\bra{0}\tilde{U}\bra{\psi}
-    \label{eq:PW-on-bras}
+    PW\ket{0}\ket{\psi} = \frac{1}{s}\ket{0}\tilde{U}\ket{\psi}
+    \label{eq:PW-on-kets}
 \end{equation}
 $$ where the value of $s$ can be adjusted by choosing the size of the segments. To use oblivious amplitude amplification, we aim for $s=2$. The paper also claims that using $A:=-WRW^\dagger RW$, where $R:=\mathbb{I} - 2P$, we can exactly implement the unitary $\tilde{U}$. i.e.,
 $$
 \begin{equation}
- A\bra{0}\bra{\psi} = \bra{0}\tilde{U}\bra{\psi}
+ A\ket{0}\ket{\psi} = \ket{0}\tilde{U}\ket{\psi}
 \end{equation}
 $$
 <!-- markdownlint-capture -->
