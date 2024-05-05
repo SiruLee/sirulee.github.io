@@ -16,12 +16,15 @@ order: 4
 Artificial Intelligence
 : CSC311 (Intro. to ML), CSC384 (Intro. to AI), PHL245 (Modern Symb. Logic)
 : (planned) CSC412 (Probabilistic Learn. & Reas.), CSC413 (Neural Nets. & Deep Learning), CSC486 (Knowledge Rep. & Reas.), PHL348 (Logic & Computation)
+
 Scientific Computing
 : CSC336 (Numerical Methods)
 : (planned) CSC436 (Numerical Algo.), CSC456 (High-Perf. Sci. Computing), PHY407 (Comp. Physics)
+
 Quantum Information
 : PHY356 (Quantum Mechanics I), PHY365 (Quantum Information)
 : (planned) PHY456 (Quantum Mechanics II), APM421 (Math. Foundations of Quantum Mechanics & Quantum Information Theory)
+
 General
 : CSC369 (Operating System), CSC373 (Algo. Design, Analysis & Complexity), MAT224 (Linear Algebra II), MAT237 (Multivariable Calc. with Proof), PHY250 (Electricity & Magnetism)
 : (planned) MAT337 (Intro. to Real Analysis)
