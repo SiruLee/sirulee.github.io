@@ -56,7 +56,7 @@ analytics:
   google:
     id: G-43EBRGMWJ8 # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: sirulee # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
