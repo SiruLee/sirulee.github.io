@@ -12,7 +12,7 @@ toc: true
 ## Introduction
 This posts talks about the lemma on _Oblivious Amplitude Amplification_, from the paper published in 46th ACM Symposium on Theory of Computing, pp. 283-292 (2014) by Berry, et al. The notion of oblivious amplitude amplification can have the same performance as standard amplitude amplification, but can be applied even when the reflection about the input state is unavailable. I encourage the reader and myself to look at standard amplitude amplification also.
 
-## Lemma
+## The Lemma
 Let $U$ and $V$ be unitary matrices on $\mu + n$ qubits and $n$ qubits, respectively, and let $\theta\in (0,\pi/2)$. Suppose that for any $n$-qubit state $\ket{\psi}$,
 $$
 \begin{equation}
