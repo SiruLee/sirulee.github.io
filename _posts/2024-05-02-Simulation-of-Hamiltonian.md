@@ -77,7 +77,7 @@ $$
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
-> How did the expansion goes?
+> How did the expansion work
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
