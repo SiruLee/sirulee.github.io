@@ -25,5 +25,8 @@ The bad subspace is the subspace spanned by the set of basis states $\ket{x}\in\
 #### Procedure
 Note that every pure state $\ket{\Upsilon}\in\mathcal{H}$ has a unique decomposition as $\ket{\Upsilon} = \ket{\Upsilon_0} + \ket{\Upsilon_1}$ where $\ket{\Upsilon_0}$ is the projection onto the bad subspace and $\ket{\Upsilon_1}$ is the projection onto the good subspace. 
 
-Let $\mathcal{A}$ be any quantum algorithm that acts on $\mathcal{H}$ without measurement. Let $\ket{\Psi} = \mathcal{A}\ket{0}$. The amplification process follows the repeated application of the unitary operator $$\mathcal{Q} = -\mathcal{A}\mathcal{S}_0\mathcal{A}^{-1}\mathcal{S}_\chi$$,
+Let $\mathcal{A}$ be any quantum algorithm that acts on $\mathcal{H}$ without measurement. Let $\ket{\Psi} = \mathcal{A}\ket{0}$. The amplification process follows the repeated application of the unitary operator 
+
+$$\mathcal{Q} = -\mathcal{A}\mathcal{S}_0\mathcal{A}^{-1}\mathcal{S}_\chi$$,
+
 where $\mathcal{S}_0$ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.

@@ -14,12 +14,15 @@ This posts talks about the lemma on _Oblivious Amplitude Amplification_, from th
 
 ## The Lemma
 Let $U$ and $V$ be unitary matrices on $\mu + n$ qubits and $n$ qubits, respectively, and let $\theta\in (0,\pi/2)$. Suppose that for any $n$-qubit state $\ket{\psi}$,
+
 $$
 \begin{equation}
   U\ket{0^\mu}\ket{\psi} = \sin(\theta)\ket{0^\mu}V\ket{\psi} + \cos(\theta)\ket{\Phi^\perp},
 \end{equation}
 $$
+
 where $\ket{\Phi^\perp}$ is an $(\mu + n)$-qubit state that depends on $\ket{\psi}$ and satisfies $\Gamma\ket{\Phi^\perp} = 0$, where $\Gamma:=\ket{0^\mu}\bra{0^\mu}\otimes\mathbb{I}$. Let $R:=2\Gamma - \mathbb{I}$ and $S:=-URU^\dagger R$. Then for any $l\in\mathbb{Z}$,
+
 $$
 \begin{equation}
   S^lU\ket{0^\mu}\ket{\psi} = \sin((2l+1)\theta)\ket{0^\mu}V\ket{\psi} + \cos((2l+1)\theta)\ket{\Phi^\perp}.
