@@ -122,4 +122,8 @@ Ultimately, in order to make the probability close to 1, $j\in\mathbb{N}$ has to
 > From the result of amplification procedure, $\mathcal{Q}^j\mathcal{A}\ket{0}$, and the definition of $\mathcal{Q}$ where each of $\mathcal{A}$ and $\mathcal{A}^{-1}$ appears.
 {: .prompt-info }
 
+## Future Reading
+I suggest reading Grover's original paper on his search algorithm to see how exactly the idea of quantum amplitude amplification was applied[^r2].
+
 [^r1]: Brassard, G., Høyer, P.. (2 May 2000). _Quantum Amplitude Amplification and Estimation_.
+[^r2]: Grover, Lov K., “Quantum mechanics helps in searching for a needle in a haystack”, Physical Review Letters, Vol. 79, July 1997.
