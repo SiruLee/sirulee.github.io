@@ -10,7 +10,7 @@ toc: true
 ---
 
 ## Introduction
-The paper introduces a new approach to Hamiltonian simulation with exponentially improved performance compared to the past work[^r1]. The key idea is to decompose the Hamiltonian in to a linear combination of unitary operations and implement Taylor series of the evolution operator. The time evolution is broken up into _segments_ each of which is performed using _oblivious amplitude amplification_. 
+The paper introduces a new approach to Hamiltonian simulation with exponentially improved performance compared to the past work[^r1]. The key idea is to decompose the Hamiltonian in to a linear combination of unitary operations and implement Taylor series of the evolution operator. The time evolution is broken up into _segments_ each of which is performed using _oblivious amplitude amplification_[^r2]. 
 
 ## Summary of Method
 Suppose we are simulating the time evolution of a finite-dimentional Hamiltonian of the form
@@ -127,4 +127,34 @@ $$
 > Leave the proof for the reader and myself :)
 {: .prompt-info }
 <!-- markdownlint-restore -->
+
+## Effect of Nonunitarity
+Oblivious amplitude amplification cannot be directly used to the approximation $\tilde{U}$ becuase it is nonunitary. Instead, the paper proves a robust version of oblivious amplitude amplification even when $\tilde{U}$ is only close to a unitary matrix.
+#### Proof
+First observe
+$$
+\begin{equation}
+  PA\ket{0}\ket{\psi} = (4PW - 4PWPW^\dagger PW)\ket{0}\ket{\psi}
+  \label{eq:PA-proof}
+\end{equation}
+$$
+Then we obtain, by \eqref{eq:PA-proof},
+$$
+\begin{equation}
+    PA\ket{0}\ket{\psi} = \ket{0}\left(\frac{3}{s}\tilde{U} - \frac{4}{s^3}\tilde{U}\tilde{U}^\dagger\tilde{U}\right)\ket{\psi}.
+    \label{eq:PA-amp}
+\end{equation}
+$$
+
+#### Error
+Provided that $|s-2| = O(\delta)$ and $\lVert\tilde{U} - U_r\rVert = O(\delta)$, it follows that the conditions of oblivious amplitude amplification (the unitarity of approximation $\tilde{U}$) are true to order $\delta$, i.e., $\lVert\tilde{U}\tilde{U}^\dagger - \mathbb{I}\rVert = O(\delta)$. Then \eqref{eq:PA-amp} implies
+$$
+\begin{equation}
+    \lVert PA\ket{0}\ket{\psi} - \ket{0}U_r\ket{\psi}\rVert = O(\delta). 
+    \label{eq:PA-approx}
+\end{equation}
+$$
+Thus, we can overcome the problem arosed from the nonunitarity within the error of $O(\delta)$.
+
 [^r1]: D. W. Berry, A. M. Childs, R. Cleve, R. Kothari, and R.D. Somma, in Proc. 46th ACM Symposium on Theory of Computing, pp. 283–292 (2014).
+[^r2]: D. W. Berry, A. M. Childs, R. Cleve, R. Kothari, and R.D. Somma. Simulating Hamiltonian dynamics with a truncated Taylor series (Dec. 16, 2014).
