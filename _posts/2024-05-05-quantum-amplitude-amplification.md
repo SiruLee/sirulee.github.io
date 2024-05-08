@@ -66,7 +66,7 @@ The unitarity of $\mathcal{Q}$ makes the subspace $\mathcal{H}_\Psi$ to have an 
 
 $$
 \begin{equation}
-    \ket{\Psi_\pm} = \frac{1}{\sqrt{2}}\left(\frac{1}{\sprt{a}}\ket{\Psi_1} \pm \frac{i}{\sqrt{1-a}}\ket{\Psi_0} \right)
+    \ket{\Psi_\pm} = \frac{1}{\sqrt{2}}\left(\frac{1}{\sqrt{a}}\ket{\Psi_1} \pm \frac{i}{\sqrt{1-a}}\ket{\Psi_0} \right)
     \label{eq:eigenvectors}
 \end{equation}
 $$
@@ -84,7 +84,7 @@ where the angle $0\leq\theta_a\leq \pi/2$ is defined so that
 
 $$
 \begin{equation}
-    \sin^2(\theta_a) = a = \bra{\Psi_1}\ket{\Psi_1}
+    \sin^2(\theta_a) = a = \braket{\Psi_1}{\Psi_1}
 \end{equation}
 $$
 
