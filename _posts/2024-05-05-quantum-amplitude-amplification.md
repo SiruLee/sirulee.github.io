@@ -3,7 +3,7 @@ title: Quantum Amplitude Amplification and Estimation
 author: jiheon_lee
 description: Paper by Brassard, Hoyer, Mosca, and Tapp (2000)
 date: 2024-05-05 10:40:00 -0400
-categories: [Paper Reading, Physics-PR]
+categories: [Paper Reading, Physics Paper]
 tags: [Quantum Physics, Quantum Simulation]
 math: true
 toc: true
@@ -36,7 +36,7 @@ $$
 \end{equation}
 $$
 
-where $\mathcal{S}0$ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.
+where $\mathcal{S}_0$ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.
 
 Then it follows that for a basis vectors $\ket{\Psi_1}$ and $\ket{\Psi_0}$ of the subspace $\mathcal{H}_\Psi$
 

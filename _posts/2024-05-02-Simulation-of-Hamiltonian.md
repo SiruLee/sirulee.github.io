@@ -3,7 +3,7 @@ title: Simulating Hamiltonian dynamics with a truncated Taylor Series
 author: jiheon_lee
 description: Paper by Berry, Childs, Cleve, Kothari, and Somma (2014)
 date: 2024-05-02 01:05:00 -0400
-categories: [Paper Reading, Physics-PR]
+categories: [Paper Reading, Physics Paper]
 tags: [Quantum Physics, Quantum Simulation]
 math: true
 toc: true
