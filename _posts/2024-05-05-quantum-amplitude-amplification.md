@@ -1,7 +1,7 @@
 ---
 title: Quantum Amplitude Amplification and Estimation
 author: jiheon_lee
-description: Paper by Brassard, Hoyer, Mosca, and Tapp (2000)
+description: Paper by Brassard, Høyer, Mosca, and Tapp (2000)
 date: 2024-05-05 10:40:00 -0400
 categories: [Paper Reading, Physics Paper]
 tags: [Quantum Physics, Quantum Simulation]
@@ -15,7 +15,7 @@ toc: true
 This posts is written after reading Chapter 2: Quantum amplitude amplification of the paper by Brassard and Hoyer[^r1], specifically the part with the probability of success $a$ known. Intuitively, the classical probabilistic paradigm would increase the probability of success by a constant on each iteration. This results in $1/N$ iterations on average to find success. In contrast, quantum amplitude amplification increases the _amplitude_ of success by a constant on each iteration. Since amplitudes correspond to square root of probabilities, this would result in approximately $1/\sqrt{\alpha}$ times to find success, where $\alpha$ is the probability that a quantum state is measured and turns out to be a success.
 
 ## Basics
-First, define a boolean function $\chi : \mathbb{Z} \rightarrow \left\{0,1\right\}$ that partitions the Hilbert space $\mathcal{H}$ into a direct sum of two subspaces, a "good" subspace and a "bad" subspace.
+First, define a boolean function $\chi : \mathbb{Z} \rightarrow \\{0,1\\}$ that partitions the Hilbert space $\mathcal{H}$ into a direct sum of two subspaces, a "good" subspace and a "bad" subspace.
 
 #### The Good Subspace
 The good subspace is the subspace spanned by the set of basis states $\ket{x}\in\mathcal{H}$ where $\chi(x) = 1$.
@@ -36,7 +36,7 @@ $$
 \end{equation}
 $$
 
-where $ {\mathcal{S}}_0 $ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.
+where $ \mathcal{S}_0 $ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.
 
 Then it follows that for a basis vectors $\ket{\Psi_1}$ and $\ket{\Psi_0}$ of the subspace $\mathcal{H}_\Psi$
 
@@ -131,4 +131,4 @@ Ultimately, in order to make the probability close to 1, $j\in\mathbb{N}$ has to
 I suggest reading Grover's original paper on his search algorithm to see how exactly the idea of quantum amplitude amplification was applied[^r2].
 
 [^r1]: Brassard, G., Høyer, P.. (2 May 2000). _Quantum Amplitude Amplification and Estimation_.
-[^r2]: Grover, Lov K., “Quantum mechanics helps in searching for a needle in a haystack”, Physical Review Letters, Vol. 79, July 1997.
+[^r2]: Grover, Lov K.. (July 1997). _Quantum mechanics helps in searching for a needle in a haystack_. Physical Review Letters. Vol. 79.
