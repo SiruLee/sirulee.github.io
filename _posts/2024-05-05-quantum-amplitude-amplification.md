@@ -29,7 +29,11 @@ Note that every pure state $\ket{\Upsilon}\in\mathcal{H}$ has a unique decomposi
 
 Let $\mathcal{A}$ be any quantum algorithm that acts on $\mathcal{H}$ without measurement. Let $\ket{\Psi} = \mathcal{A}\ket{0}$. The amplification process follows the repeated application of the unitary operator 
 
-$$\mathcal{Q} = -\mathcal{A}\mathcal{S}_0\mathcal{A}^{-1}\mathcal{S}_\chi$$,
+$$
+\begin{equation}
+    \mathcal{Q} = -\mathcal{A}\mathcal{S}_0\mathcal{A}^{-1}\mathcal{S}_\chi,
+\end{equation}
+$$
 
 where $\mathcal{S}_0$ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.
 
@@ -41,7 +45,7 @@ $$
     \mathcal{Q}\ket{\Psi_0} = 2(1-a)&\ket{\Psi_1} + (1-2a)&\ket{\Psi_0}
 \end{align}
 $$
-where $a = \bra{\Psi_1}\ket{\Psi_1}$. Thus the subspace $\mathcal{H}_\Psi$ is _invariant_ under $\mathcal{Q}$.
+where $a = \langle\Psi_1 | \Psi_1\rangle$. Thus the subspace $\mathcal{H}_\Psi$ is _invariant_ under $\mathcal{Q}$.
 
 The paper also explains the action of $\mathcal{Q}$ on $\mathcal{H}_\Psi$ as the operator
 
@@ -84,7 +88,7 @@ where the angle $0\leq\theta_a\leq \pi/2$ is defined so that
 
 $$
 \begin{equation}
-    \sin^2(\theta_a) = a = \braket{\Psi_1}{\Psi_1}
+    \sin^2(\theta_a) = a = \langle \Psi_1 | \Psi_1 \rangle
 \end{equation}
 $$
 
