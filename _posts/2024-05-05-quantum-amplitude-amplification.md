@@ -19,6 +19,7 @@ First, define a boolean function $\chi : \mathbb{Z} \rightarrow \{0,1\}$ that pa
 
 #### The Good Subspace
 The good subspace is the subspace spanned by the set of basis states $\ket{x}\in\mathcal{H}$ where $\chi(x) = 1$.
+
 #### The Bad Subspace
 The bad subspace is the subspace spanned by the set of basis states $\ket{x}\in\mathcal{H}$ where $\chi(x) = 0$.
 
@@ -35,7 +36,7 @@ $$
 \end{equation}
 $$
 
-where $\mathcal{S}_0$ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.
+where $\mathcal{S}0$ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.
 
 Then it follows that for a basis vectors $\ket{\Psi_1}$ and $\ket{\Psi_0}$ of the subspace $\mathcal{H}_\Psi$
 
