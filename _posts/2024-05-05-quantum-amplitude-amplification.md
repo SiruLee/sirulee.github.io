@@ -36,7 +36,7 @@ $$
 \end{equation}
 $$
 
-where $\mathcal{S}\_0$ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}_\chi$ changes the sign of the amplitude of the _good states_.
+where $\mathcal{S}\_0$ changes the sign of the amplitude if and only if the state is the zero state $\ket{0}$ and $\mathcal{S}\_\chi$ changes the sign of the amplitude of the _good states_.
 
 Then it follows that for a basis vectors $\ket{\Psi_1}$ and $\ket{\Psi_0}$ of the subspace $\mathcal{H}_\Psi$
 
@@ -62,10 +62,10 @@ $$
     \mathbf{U}_\Psi = \mathbb{I} - 2\ket{\Psi}\bra{\Psi}.
 \end{align}
 $$
-In other words, ${\mathbf{U}}_{\Psi_0}$ is a reflection through the line spanned by the vector $\ket{\Psi_0}$, and ${\mathbf{U}}_\Psi$ is a reflection through the line spanned by the vector $\ket{\Psi}$.
+In other words, $\mathbf{U}\_{\Psi_0}$ is a reflection through the line spanned by the vector $\ket{\Psi_0}$, and ${\mathbf{U}}\_\Psi$ is a reflection through the line spanned by the vector $\ket{\Psi}$.
 
 #### In the Orthogonal Complement
-For the orthogonal complement $\mathcal{H}^\perp_\Psi$ of $\mathcal{H}\_\Psi$ in $\mathcal{H}$, $\mathcal{A}{\mathcal{S}}_0\mathcal{A}^{-1}$ acts as the identity. Hence the operator $\mathcal{Q}$ acts just as $-\mathcal{S}\_\chi$ on the complement. Thus, $\mathcal{Q}^2$ acts as the identity on the complement, and every eigenvector of $\mathcal{Q}$ in $\mathcal{H}^\perp_{\Psi}$ has eigenvalue +1 or -1. This leads our interest to consider the action of $\mathcal{Q}$ on an arbitrary initial vector $\ket{\Upsilon}$ in $\mathcal{H}$ projected onto ${\mathcal{H}}_\Psi$.
+For the orthogonal complement $\mathcal{H}^\perp_\Psi$ of $\mathcal{H}\_\Psi$ in $\mathcal{H}$, $\mathcal{A}\mathcal{S}\_0\mathcal{A}^{-1}$ acts as the identity. Hence the operator $\mathcal{Q}$ acts just as $-\mathcal{S}\_\chi$ on the complement. Thus, $\mathcal{Q}^2$ acts as the identity on the complement, and every eigenvector of $\mathcal{Q}$ in $\mathcal{H}^\perp_{\Psi}$ has eigenvalue +1 or -1. This leads our interest to consider the action of $\mathcal{Q}$ on an arbitrary initial vector $\ket{\Upsilon}$ in $\mathcal{H}$ projected onto $\mathcal{H}\_\Psi$.
 
 The unitarity of $\mathcal{Q}$ makes the subspace $\mathcal{H}\_\Psi$ to have an orthonormal basis consisting of two eigenvectors of $\mathcal{Q}$:
 

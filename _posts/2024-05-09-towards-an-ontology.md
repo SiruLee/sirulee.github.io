@@ -10,7 +10,7 @@ toc: true
 ---
 
 ## Introduction
-This posts is written after reading the study on an _Ontology for Generative Design of Mechanical Assemblies_ by Bahar Aameri, et al. (2019)[^r1].
+This posts is written after reading the study on an _Ontology for Generative Design of Mechanical Assemblies_ by Bahar Aameri, et al. (2019)[^r1] for the project under Prof. Aameri during 2024 Summer.
 
 
 
