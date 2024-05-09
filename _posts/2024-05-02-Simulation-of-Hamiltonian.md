@@ -77,7 +77,7 @@ $$
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
-> How did the expansion work
+> How did the expansion work?
 {: .prompt-info }
 <!-- markdownlint-restore -->
 
@@ -90,7 +90,7 @@ $$
 \end{equation}
 $$
 
-where $\beta_j>0$ and each $V_j$ is a unitary that corresponds to some $(-i)^kH_{l_1}\cdots H_{l_k}.
+where $\beta_j>0$ and each $V_j$ is a unitary that corresponds to some $(-i)^kH_{l_1}\cdots H_{l_k}$.
 
 ### Sum of Unitary Operators
 The procedure follows as if the entire sum were unitary. While the sum is not exactly unitary, it is close to unitary upto the bounded error.

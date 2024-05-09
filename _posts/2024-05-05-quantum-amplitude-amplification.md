@@ -15,7 +15,7 @@ toc: true
 This posts is written after reading Chapter 2: Quantum amplitude amplification of the paper by Brassard and Hoyer[^r1], specifically the part with the probability of success $a$ known. Intuitively, the classical probabilistic paradigm would increase the probability of success by a constant on each iteration. This results in $1/N$ iterations on average to find success. In contrast, quantum amplitude amplification increases the _amplitude_ of success by a constant on each iteration. Since amplitudes correspond to square root of probabilities, this would result in approximately $1/\sqrt{\alpha}$ times to find success, where $\alpha$ is the probability that a quantum state is measured and turns out to be a success.
 
 ## Basics
-First, define a boolean function $\chi : \mathbb{Z} \rightarrow \left\{0,1\right\}$ that partitions the Hilbert space $\mathcal{H}$ into a direct sum of two subspaces, a "good" subspace and a "bad" subspace.
+First, define a boolean function $\chi : \mathbb{Z} \rightarrow \{0,1\}$ that partitions the Hilbert space $\mathcal{H}$ into a direct sum of two subspaces, a "good" subspace and a "bad" subspace.
 
 #### The Good Subspace
 The good subspace is the subspace spanned by the set of basis states $\ket{x}\in\mathcal{H}$ where $\chi(x) = 1$.
