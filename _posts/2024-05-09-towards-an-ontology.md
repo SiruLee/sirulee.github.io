@@ -10,7 +10,7 @@ toc: true
 ---
 
 ## Introduction
-This posts is written after reading the study on an _Ontology for Generative Design of Mechanical Assemblies_ by Bahar Aameri, et al. (2019)[^r1] for the project under Prof. Aameri during 2024 Summer. The paper studies the use of ontologies to model and reason about designs. The paper specifically provides an ontology to specify connection, parthood, and shapes in mechanical assemblies. The idea extends the _Ground Mereotopology_ of Casati and Varzi (1999)[^Casati-Vardi] to multi-dimention, and combines it with a qualitative shape ontology based on the Hilbert's _axiomatic theory of geometry_ (1902)[^Hilbert].
+This posts is written after reading the study on an _Ontology for Generative Design of Mechanical Assemblies_ by Bahar Aameri, et al. (2019)[^r1] for the project under Prof. Aameri during 2024 Summer. The paper studies the use of ontologies to model and reason about designs. The paper specifically provides an ontology to specify connection, parthood, and shapes in mechanical assemblies. The idea extends the _Ground Mereotopology_ of Casati and Varzi (1999)[^Casati-Varzi] to multi-dimention, and combines it with a qualitative shape ontology based on the Hilbert's _axiomatic theory of geometry_ (1902)[^Hilbert].
 
 ## Why Ontology?
 There were many approaches to deal with configuration design problems. They includes setting constraints, using shape or generative grammers to modify a given design, and generic search algorithms. However, they were either not proven to be complete or the feasible solution space is so small compared to infeasible solution space. Therefore, the use of logical ontologies is investigated to serve two main purposes:
@@ -47,16 +47,16 @@ For formalization of connection and part-whole relations, multi-dimensional mere
 1. The theory must not be atomless as such models are infinite
 2. The theory must not be extensional since finite mereotopological configurations are not necessarily extensional.
 
-> To read more about the theory of mereotopologies, see Aameri and Gruninger (2017).
+> To read more about the theory of mereotopologies, see Aameri and Gruninger (2017)[^Gruninger-Aameri].
 {: .prompt-info }
 
-Hence, the paper choose to extends the General Mereotopology (MT), the weakest theory among the mereotopologies presented by Casati and Varzi (1999)[^Casati-Vardi]
+Hence, the paper choose to extends the General Mereotopology (MT), the weakest theory among the mereotopologies presented by Casati and Varzi (1999)[^Casati-Varzi]
 
 ### Shape, Relative Position, and Dimensionality 
-The paper choose to extend an ontology presented by Gruninger and Bouafoud (2011) to capture three-dimensionality of assembly components and their shapes. The ontology is based on a subtheory of Hilbert's axiomatic theory of geometry (1902)[^Hilbert] which entails
+The paper choose to extend an ontology presented by Gruninger and Bouafoud (2011)[^Gruninger-Bouafound] to capture three-dimensionality of assembly components and their shapes. The ontology is based on a subtheory of Hilbert's axiomatic theory of geometry (1902)[^Hilbert] which entails
 
-1. Incidence relations: captures the relationship between entities with different dimensions.
-2. Betweenness relations: captures the relative position of components.
+1. *Incidence relations*: captures the relationship between entities with different dimensions.
+2. *Betweenness relations*: captures the relative position of components.
 
 ### Shape Boundaries
 For the representation of boundaries, we should adopts two ontological viewpoints: boundary is a region which has empty interior (not consider as lower-dimensional entities) (Smith, 1996); and boundary is a lower-dimensional entity which is part of the bounded entity adopted by Baumann et al. (2016), and Hahmann (2013).
@@ -74,6 +74,14 @@ The list of key ontological commitments in axiomatizing the Assembly Ontology:
 9. Every three-dimensional entity has at least one boundary, where the dimension of the boundary is exactly two-dimensional
 
 ## The Assembly Ontology
+The Assembly Ontology (AO) consists of three primary modules:
 
+1. *The Shape Ontology*: based on the CardWorld and BoxWorld Ontologies by Gruninger and Bouafound (2011)[^Gruninger-Bouafound] which itself is based on Hilbert's axiomatic theory of geometry by Hilbert (1902)[^Hilbert]. The ontology specifies properties and relationships among five disjoint categories of entities that represent zero-, one-, two-, three-, and four-dimensional objects where four-dimensional objects are collections of three-dimensional objects.
+2. *The MT Multidimensional Object Mereotopology (MT MOM)*: captures mereological and topological relationships between individuals with zero-, one-, two-, and three-dimensions.
+3. *The Boundary Ontology*: extends the Shape Ontology with axioms that describe properties of physical boundaries.
 
 [^r1]: Aameri, B., Cheong, H., & Beck, J. (2019). _Towards an ontology for generative design of mechanical assemblies_. Appl. Ontology, 14, 127-153.
+[^Casati-Varzi]: Casati, R. and Varzi, A. (1999). _Parts and places: The structures of spatial representation_. MIT Press
+[^Gruninger-Aameri]: Gruninger, M. and Aameri, B. (2017). _A new perspective on the mereotopology of RCC8_. In COSIT 2017.
+[^Gruninger-Bouafound]: Gruninger, M. and Bouafoud, S. (2011). Thinking outside (and inside) the box. In _Proceedings of SHAPES 1.0: The Shape of Things_. _Workshop at CONTEXT-11_, volume 812. CEUR-WS.
+[^Hilbert]: Hilbert, D. (1902). _The foundations of geometry_. Open court publishing Company.
