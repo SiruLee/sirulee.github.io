@@ -99,7 +99,7 @@ Idea: a torus is a box that has exactly one boundary surface, and no edges or ve
 
 $$
 \begin{equation}
-    \forall x torus(x) := (box(x) \land (\exists s bound\_surface(s) \land in(s,x)) \land (\forall s_1 bound\_surface(s_1) \land in(s_1,x)) \supset (s_1 = s))
+    \forall x( torus(x) := (box(x) \land \exists s(bound\_surface(s) \land in(s,x)) \land \forall s_1 (bound\_surface(s_1) \land in(s_1,x) \implies s_1 = s)))
 \end{equation}
 $$
 
@@ -108,7 +108,7 @@ Idea: a cylinder is a box with exactly three boundary surfaces, where two of the
 
 $$
 \begin{equation}
-    \forall s circular(s) := (surface(s) \land \exists e bound\_edge(e) \land in(e,s)\land (\forall e_1 bound\edge(e_1) \land in(e_1,s) \supset (e_1 = e)))
+    \forall s(circular(s) := (surface(s) \land \exists e (bound_edge(e) \land in(e,s)\land \forall e_1 (bound\_edge(e_1) \land in(e_1,s) \implies (e_1 = e)))))
 \end{equation}
 $$
 
@@ -120,9 +120,9 @@ Axiomatic definitions of the shapes of the components:
 
 $$
 \begin{align}
-    \forall x beam(x) &\supset cube(x)\\
-    \forall x wheel(x) &\supset cylinder(x)\\
-    \forall x shock(x) &\supset torus(x)\\
+    \forall x\ (beam(x) &\implies cube(x))\\
+    \forall x\ (wheel(x) &\implies cylinder(x))\\
+    \forall x\ (shock(x) &\implies torus(x))\\
 \end{align}
 $$
 
@@ -130,8 +130,8 @@ Disjointness of classes of components:
 
 $$
 \begin{align}
-    \forall x beam(x) &\supset \lnot wheel(x) \land \lnot shock(x)\\
-    \forall x wheel(x) &\supset \lnot shock(x)
+    \forall x\ (beam(x) &\implies \lnot wheel(x) \land \lnot shock(x))\\
+    \forall x\ (wheel(x) &\implies \lnot shock(x))
 \end{align}
 $$
 
@@ -139,14 +139,14 @@ $$
 A fixed joint is a shared surface between two three-dimensional components (*boxes*):
 $$
 \begin{equation}
-    \forall x,y fixed\_joined(x,y) := (box(x)\land box(y)\land \exists z surface(z) \land in(z,x) \land in(z,y))
+    \forall x,y (fixed\_joined(x,y) := (box(x)\land box(y)\land \exists z (surface(z) \land in(z,x) \land in(z,y))))
 \end{equation}
 $$
 
 A ball joint is a shared point between two three-dimensional components (*boxes*):
 $$
 \begin{equation}
-    \forall x,y ball\_joined(x,y) := (box(x)\land box(y)\land \exists z point(z) \land in(z,x) \land in(z,y))
+    \forall x,y(ball\_joined(x,y) := (box(x)\land box(y)\land \exists z (point(z) \land in(z,x) \land in(z,y))))
 \end{equation}
 $$
 
