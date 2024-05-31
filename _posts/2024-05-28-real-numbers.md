@@ -9,17 +9,17 @@ math: true
 toc: true
 ---
 
-![Desktop View](/_posts/_images/real-numbers/Real%20Numbers_page-0001.jpg){: width="850" height="1100" }
+![Desktop View](./_images/real-numbers/Real%20Numbers_page-0001.jpg){: width="850" height="1100" }
 _Page 1_
 
-![Desktop View](/_posts/_images/real-numbers/Real%20Numbers_page-0002.jpg){: width="850" height="1100" }
+![Desktop View](./_images/real-numbers/Real%20Numbers_page-0002.jpg){: width="850" height="1100" }
 _Page 2_
 
-![Desktop View](/_posts/_images/real-numbers/Real%20Numbers_page-0003.jpg){: width="850" height="1100" }
+![Desktop View](./_images/real-numbers/Real%20Numbers_page-0003.jpg){: width="850" height="1100" }
 _Page 3_
 
-![Desktop View](/_posts/_images/real-numbers/Real%20Numbers_page-0004.jpg){: width="850" height="1100" }
+![Desktop View](./_images/real-numbers/Real%20Numbers_page-0004.jpg){: width="850" height="1100" }
 _Page 4_
 
-![Desktop View](/_posts/_images/real-numbers/Real%20Numbers_page-0005.jpg){: width="850" height="1100" }
+![Desktop View](./_images/real-numbers/Real%20Numbers_page-0005.jpg){: width="850" height="1100" }
 _Page 5_
