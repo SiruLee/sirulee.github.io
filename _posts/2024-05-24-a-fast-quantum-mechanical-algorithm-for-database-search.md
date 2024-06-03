@@ -48,3 +48,24 @@ $$
 
 where $\phi_i$ is an arbitrary real number for all $i=1,2,3,4$. This transformation does not change the probability in each state since the square of the absolute value of the amplitude in each state stays same.
 
+## Algorithm
+1. Initialize the system to the distribution of same probability amplitude for all possible states by applying Hadamard gate on every input state, i.e.,
+$$
+\begin{equation}
+\ket{\psi} = H^{\otimes N}\ket{\psi_0} =  \frac{1}{\sqrt{N}}\ket{\S_0} + \cdots + \frac{1}{\sqrt{N}}\ket{\S_{2^N}}
+\end{equation}
+$$
+2. Repeat the following unitary operations $O(\sqrt{N})$ times:
+    - Let the system by in any state S: in case $C(S) = 1$, rotate the phase by $\pi$. Otherwise, leave the system unchanged
+    - Apply the diffusion transformation $D$ defined as 
+    $$
+    \begin{equation}
+        D_{ij} = \begin{cases} 
+            \frac{2}{N} & \text{ if } i\neq j
+            -1 + \frac{2}{N} & \text{ if } i = j
+        \end{cases}
+    \end{equation}
+    $$
+> The diffusion transformation $D$ is equivalent to $FRF$ where $F$ is the Fourier Transformation Matrix and $R$ is the rotational matrix where $R\_{ij} = 0$ if $i\neq j$, $R\_{ii} = 1$ if $i=0$, and $R\_{ii} = -1$ if $i\neq 0$
+{: .prompt-info }
+3. Sample the resulting state. In case there is a unique state $S\_v$ such that $C(S\_v) = 1$, the final state is $S\_v$ with a probability at least 0.5.
