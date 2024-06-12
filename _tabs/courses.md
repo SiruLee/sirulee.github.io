@@ -9,6 +9,7 @@ order: 5
 - CSC311 Introduction to Machine Learning - Prof. Alice Gao; A+
 - CSC384 Introduction to Artificial Intelligence - Prof. Bahar Aameri; A+
 - PHL245 Modern Symbolic Logic - Prof. Eamon Darnell; A+
+
 #### Planned
 - CSC412 Probabilistic Learning & Reasoning
 - CSC413 Neural Networks & Deep Learning
@@ -18,6 +19,7 @@ order: 5
 ### Scientific Computing
 #### 2023-2024
 - CSC336 Numerical Methods - Prof. Christina Christara; A+
+
 #### Planned 
 - CSC446 Computational Methods for Partial Differential Equations - Prof. Kirill Serkh
 - PHY407 Computational Physics - Prof. TBD
@@ -25,8 +27,10 @@ order: 5
 ### Quantum Physics/Quantum Information
 #### 2023-2024
 - PHY356 Quantum Mechanics I - Prof. John Sipe; A-
+
 #### 2022-2023
 - PHY365 Quantum Information - Prof. Daniel James; A
+
 #### planned
 - PHY456 Quantum Mechanics II
 - APM421/MAT1723 Mathematical Foundations of Quantum Mechanics & Quantum Information Theory - Prof. Israel Michael Sigal
@@ -37,11 +41,13 @@ order: 5
 - CSC258 Computer Organization - Prof. Mario Badr; A+
 - CSC373 Algorithm Design, Analysis & Complexity - Prof. Nathan Wiebe; A+
 - CSC369 Operating System - Prof. Mario Badr; A
+
 #### 2022-2023
 - CSC207 Software Design - Prof. Paul Gries; A+
 - CSC209 Software Tool & System Programming - Prof. Michelle Craig; A+
 - CSC236 Introduction to the Theory of Computation - Prof. François Pitt; A+
 - CSC263 Data Structures & Analysis - Prof. François Pitt; A+
+
 #### 2021-2022
 - CSC108 Introduction to Computer Programming - Prof. Sadia Sharmin; A+
 - CSC148 Introduction to Computer Science - Prof. Sadia Sharmin; A+
@@ -50,12 +56,15 @@ order: 5
 ### General Physics
 #### 2023-2024
 - PHY224 Practical Physics I - Prof. Christopher Lee; A+
+
 #### 2022-2023
 - PHY250 Electricity & Magnetism - Prof. Robert Orr; A+
 - PHY256 Introduction to Quantum Mechanics - Prof. Aephraim Steinberg; A+
+
 #### 2021-2022
 - PHY151 Foundations of Physics I - Prof. Paul Kushner & Prof. Stephen Julian; A+
 - PHY152 Foundations of Physics II - Prof. Paul Kushner & Prof. Stephen Julian; A+ 
+
 #### planned
 - PHY385 Introductory Optics
   
@@ -63,9 +72,11 @@ order: 5
 #### 2023-2024
 - MAT224 Linear Algebra II - Prof. Nara Jung; A+
 - MAT244 Introduction to Ordinary Differential Equations - Prof. Victor Ivrii; A+
+
 #### 2022-2023
 - MAT237 Multivariable Calculus with Proofs - Prof. Asif Ali Zaman; A+
 - STA247 Probability with Computer Applications - Prof. Karen Wong; A+
+
 #### 2021-2022
 - MAT137 Calculus with Proofs - Prof. Xiaoyue Cui; A+
 - MAT223 Linear Algebra I - Prof. Stan Yoshinobu; A+
