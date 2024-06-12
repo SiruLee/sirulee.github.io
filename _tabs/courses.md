@@ -3,6 +3,10 @@
 icon: fas fa-book
 order: 5
 ---
+
+> If you are a UofT student and you have any academic question, feel free to shoot me an email (bottom of the sidebar)
+{: .prompt-tip}
+
 ## Courses completed in my Undergraduate Study
 ### Artificial Intelligence
 #### 2023-2024
