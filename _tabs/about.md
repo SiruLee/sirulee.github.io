@@ -12,6 +12,7 @@ order: 4
   - Scientific Computing Focus
 - Physics Major
 - Mathematics Minor
+
 > For the courses I took in my study, go to *Course* tab.
 {: .prompt-info}
 
